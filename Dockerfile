@@ -16,7 +16,9 @@ RUN apt-get upgrade -y
 # end installing Dataspeed DBW
 
 # install python packages
-RUN apt-get install -y python-pip
+RUN easy_install pip==20.2.3
+RUN pip install testresources
+RUN pip install setuptools --upgrade
 COPY requirements.txt ./requirements.txt
 RUN pip install -r requirements.txt
 
