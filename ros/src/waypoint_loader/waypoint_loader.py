@@ -14,7 +14,6 @@ import rospy
 CSV_HEADER = ['x', 'y', 'z', 'yaw']
 MAX_DECEL = 1.0
 
-
 class WaypointLoader(object):
 
     def __init__(self):

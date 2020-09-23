@@ -42,14 +42,18 @@ To set up port forwarding, please refer to the "uWebSocketIO Starter Guide" foun
 git clone https://github.com/udacity/CarND-Capstone.git
 ```
 
-2. Install python dependencies
+2. Install python dependencies using the updated `requirements.txt` file from this repository
 ```bash
 cd CarND-Capstone
+sudo easy_install pip==20.2.3
 pip install -r requirements.txt
 ```
 3. Make and run styx
 ```bash
-cd ros
+cd ros/src
+mv CMakeLists{,_old}.txt
+catkin_init_workspace
+cd ..
 catkin_make
 source devel/setup.sh
 roslaunch launch/styx.launch

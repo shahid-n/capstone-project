@@ -1,3 +1,5 @@
+setuptools==44.1.1
+testresources
 attrdict==2.0.0
 gevent==1.4.0
 gevent-websocket==0.10.1
